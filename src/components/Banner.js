@@ -1,6 +1,7 @@
 import '../styles/banner.css'
 
 import { useLocation } from 'react-router-dom'
+import photo from '../assets/Mask Group.png'
 
 
 const Banner = () => {
@@ -11,9 +12,10 @@ const Banner = () => {
 
   if ( !isInSet ) {return( <>  </> ) }
   return (
-    <>
-        <span> Ici c'est un Banner  </span>
-    </>
+    <div className='ks-banner'>
+      	<img className='ks-banner-img' src={photo} alt="Chez vous, partout et ailleurs" />
+        <span className='ks-banner-txt'> Chez vous, partout et ailleurs  </span>
+    </div>
   )
 };
 

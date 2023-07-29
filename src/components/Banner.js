@@ -1,7 +1,8 @@
 import '../styles/banner.css'
 
 import { useLocation } from 'react-router-dom'
-import photo from '../assets/Mask Group.png'
+import photo1 from '../assets/Mask Group.png'
+import photo2 from '../assets/_Section 1 (1).png'
 
 
 const Banner = () => {
@@ -11,10 +12,21 @@ const Banner = () => {
   const isInSet = locationSet.has(location.pathname) 
 
   if ( !isInSet ) {return( <>  </> ) }
+
+  const locationSetHome = new Set(['', '/'])
+  const isInSetHome = locationSetHome.has(location.pathname) 
+  if ( isInSetHome ) {
+    return (
+      <div className='ks-banner'>
+          <img className='ks-banner-img' src={photo1} alt="Chez vous, partout et ailleurs" />
+          <span className='ks-banner-txt'> Chez vous, partout et ailleurs  </span>
+      </div>
+    )
+  }
+
   return (
     <div className='ks-banner'>
-      	<img className='ks-banner-img' src={photo} alt="Chez vous, partout et ailleurs" />
-        <span className='ks-banner-txt'> Chez vous, partout et ailleurs  </span>
+      	<img className='ks-banner-img' src={photo2} alt="Chez vous, partout et ailleurs" />
     </div>
   )
 };

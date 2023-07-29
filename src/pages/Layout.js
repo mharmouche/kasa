@@ -6,14 +6,14 @@ import "./css/layout.css"
 
 const Layout = () => {
   return (
-    <>
+    <div className='ks-layout'>
       <body className='ks-body'>
         <Header />
         <Banner />
         <Outlet />
       </body>
       <Footer />
-    </>
+    </div>
   )
 };
 

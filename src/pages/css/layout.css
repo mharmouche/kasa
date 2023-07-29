@@ -1,3 +1,9 @@
+.ks-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
 .ks-body {
     display: flex;
     flex-direction: column;

@@ -7,11 +7,11 @@ import "./css/layout.css"
 const Layout = () => {
   return (
     <div className='ks-layout'>
-      <body className='ks-body'>
+      <main className='ks-main'>
         <Header />
         <Banner />
         <Outlet />
-      </body>
+      </main >
       <Footer />
     </div>
   )

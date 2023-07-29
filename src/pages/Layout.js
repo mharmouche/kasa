@@ -2,14 +2,17 @@ import {Outlet} from "react-router-dom";
 import Header from '../components/Header'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
+import "./css/layout.css"
 
 const Layout = () => {
   return (
     <>
-	<Header />
-	<Banner />
-	<Outlet />
-	<Footer />
+      <body className='ks-body'>
+        <Header />
+        <Banner />
+        <Outlet />
+      </body>
+      <Footer />
     </>
   )
 };

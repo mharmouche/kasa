@@ -1,1 +1,9 @@
+.ks-nav {
+    display: flex;
+    justify-content: flex-end;
+}
 
+.ks-nav .ks-nav-div {
+    color: black;
+    padding: 10px;
+}

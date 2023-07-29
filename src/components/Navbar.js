@@ -4,21 +4,22 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <>
-        <ul>
-                <li>
-                    <Link  to='/'>
-                        Accueil
-                    </Link>
-                </li>
-                <li>
-                    <Link  to='/propos/'>
-                        A propos
-                    </Link>
-                </li>
-	</ul>
-    </>
+    <nav className='ks-nav'>
+        <div className='ks-nav-div'>
+            <p className='ks-nav-p'>
+                <Link  to='/'>Accueil</Link>
+            </p>
+        </div>
+        <div className='ks-nav-div'>
+            <p className='ks-nav-p'>
+                <Link  to='/propos/'>
+                    A Propos
+                </Link>
+            </p>
+        </div> 
+    </nav>
   )
 };
 
 export default Navbar;
+

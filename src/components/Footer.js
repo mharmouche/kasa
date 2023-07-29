@@ -4,7 +4,7 @@ import Copyright from './Copyright'
 
 const Footer = () => {
   return (
-    <header className='footer'>
+    <header className='ks-footer'>
         <LogoFooter />
         <Copyright />
     </header>

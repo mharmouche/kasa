@@ -1,8 +1,8 @@
 import '../styles/banner.css'
 
 import { useLocation } from 'react-router-dom'
-import photo1 from '../assets/Mask Group.png'
-import photo2 from '../assets/_Section 1 (1).png'
+import photo1 from '../assets/IMG.png'
+import photo2 from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png'
 
 
 const Banner = () => {

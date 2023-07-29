@@ -1,10 +1,10 @@
-.ks-main {
+.ks-layout {
     display: flex;
     flex-direction: column;
     justify-content:space-around;
 }
 
-.ks-body {
+.ks-main {
     display: flex;
     flex-direction: column;
     padding: 20px;

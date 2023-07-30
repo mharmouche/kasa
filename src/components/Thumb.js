@@ -1,9 +1,9 @@
 import "../styles/thumb.css"
 
-const title = "Appartement cosy"
-const cover = "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
+//const title = "Appartement cosy"
+//const cover = "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
 
-const Thumb = () => {
+const Thumb = ({title, cover}) => {
   return (
   <>
     <div className='ks-thumb'>

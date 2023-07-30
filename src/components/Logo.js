@@ -4,7 +4,7 @@ import '../styles/logo.css'
 const Logo = () => {
   return (
     <>
-	<img src={LOGO} alt="kasa, location d'appartements" />
+	<img className='ks-logo' src={LOGO} alt="kasa, location d'appartements" />
     </>
   )
 };

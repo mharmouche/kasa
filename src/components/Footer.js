@@ -4,10 +4,10 @@ import Copyright from './Copyright'
 
 const Footer = () => {
   return (
-    <header className='ks-footer'>
+    <footer className='ks-footer'>
         <LogoFooter />
         <Copyright />
-    </header>
+    </footer>
   )
 };
 

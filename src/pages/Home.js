@@ -1,13 +1,20 @@
+import Thumb from "../components/Thumb";
+
 import "./css/home.css"
 
 const Home = () => {
   return (
   <>
     <div className='ks-gallery'>
-      <p>Home test page</p>
-      <p>Home test page</p>
-      <p>Home test page</p>
-      <p>Home test page</p>
+      <Thumb/>
+      <Thumb/>
+      <Thumb/>
+      <Thumb/>
+      <Thumb/>
+      <Thumb/>
+      <Thumb/>
+      <Thumb/>
+      <Thumb/>
     </div>
   </>);
 };

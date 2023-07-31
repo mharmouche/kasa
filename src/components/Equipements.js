@@ -1,3 +1,4 @@
+import '../styles/equipements.css'
 
 function NumberList(props) {
   const numbers = props.numbers;

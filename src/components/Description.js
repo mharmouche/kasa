@@ -1,8 +1,9 @@
+import '../styles/description.css'
 
 const Description = ({description}) => {
   return (
     <>
-        <span> {description}  </span>
+        <span className="ks-logement-description"> {description}  </span>
     </>
   )
 };

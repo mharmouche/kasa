@@ -3,7 +3,7 @@ const Host = ({host}) => {
   return (
     <>
         <span> {host.name}  </span>
-        <span> {host.picture}  </span>
+        <img src={host.picture} alt=""/>
     </>
   )
 };

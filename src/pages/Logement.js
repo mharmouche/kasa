@@ -1,3 +1,4 @@
+import "./css/logement.css"
 import datas from "../datas/logements.json";
 
 import Carrousel from "../components/Carrousel";
@@ -29,7 +30,7 @@ const Logement = () => {
   return (
     <>
       <Carrousel pictures={pictures}/>
-      
+      <div className="ks-logement-section1">
         <div>
           <Title title={title} />
           <Location location={location} />
@@ -39,10 +40,11 @@ const Logement = () => {
           <Host host={host}/>
           <Rating rating ={rating}/>
         </div>
-        <div>
-          <Description description={description}/>
-          <Equipements equipements={equipements}/>
-        </div>
+      </div>
+      <div className="ks-logement-section2">
+        <Description description={description}/>
+        <Equipements equipements={equipements}/>
+      </div>
     </>
   );
 };

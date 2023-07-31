@@ -1,16 +1,14 @@
 import datas from "../datas/logements.json";
 
-function NumberList(props) {
-  const numbers = props.numbers;
-  const listItems = numbers.map((number) =>
-    <li key={number.toString()}>
-      {number}
-    </li>
-  );
-  return (
-    <ul>{listItems}</ul>
-  );
-}
+import Carrousel from "../components/Carrousel";
+import Title from "../components/Title";
+import Location from "../components/Location";
+import Tags from "../components/Tags";
+import Host from "../components/Host";
+import Rating from "../components/Rating";
+import Description from "../components/Description";
+import Equipements from "../components/Equipements";
+
 
 const Logement = () => {
   const queryParameters = new URLSearchParams(window.location.search)
@@ -19,36 +17,32 @@ const Logement = () => {
   //console.log(datas)
   //console.log(dataLogement[0])
   const title = dataLogement[0].title
-  const cover = dataLogement[0].cover
+  //const cover = dataLogement[0].cover
   const pictures = dataLogement[0].pictures
   const description = dataLogement[0].description
   const host = dataLogement[0].host
   const rating = dataLogement[0].rating
   const location = dataLogement[0].location
-  const equipments = dataLogement[0].equipments
+  const equipements = dataLogement[0].equipments
   const tags = dataLogement[0].tags 
+
   return (
     <>
-      <h1>Détails de votre logement </h1>
-      <p>id = {id}</p> 
-      <p>title = {title}</p> 
-      <p>cover = {cover}</p> 
-      <p>pictures = 
-        <NumberList numbers={pictures} /></p>
-      <p>description = {description}</p> 
+      <Carrousel pictures={pictures}/>
       
-      <p>hostname = {host.name}</p> 
-      <p>hostpic = {host.picture}</p> 
-
-      <p>rating = {rating}</p> 
-      <p>location = {location}</p> 
-      <p>equipments = 
-        <NumberList numbers={equipments} /></p>
-      
-      <p>
-        tags <NumberList numbers={tags} /></p>
-      
-
+        <div>
+          <Title title={title} />
+          <Location location={location} />
+          <Tags tags={tags}/>
+        </div>
+        <div>
+          <Host host={host}/>
+          <Rating rating ={rating}/>
+        </div>
+        <div>
+          <Description description={description}/>
+          <Equipements equipements={equipements}/>
+        </div>
     </>
   );
 };

@@ -1,15 +1,16 @@
+import { Link } from "react-router-dom";
 import "../styles/thumb.css"
 
 //const title = "Appartement cosy"
 //const cover = "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
 
-const Thumb = ({title, cover}) => {
+const Thumb = ({id, title, cover}) => {
   return (
   <>
-    <div className='ks-thumb'>
+    <Link to={'/logement?'+id} className='ks-thumb'>
       <img className='ks-thumb-cover' src={cover} alt="Chez vous, partout et ailleurs" />
       <span className='ks-thumb-title'> {title}  </span>
-    </div>
+    </Link>
   </>);
 };
 

@@ -19,7 +19,7 @@ const Home = () => {
     <div className='ks-gallery'>
       {
         datas.map(data => {
-          return ( <Thumb title={data.title} cover={data.cover} /> )
+          return ( <Thumb id={data.id} title={data.title} cover={data.cover} /> )
         })
       }
     </div>

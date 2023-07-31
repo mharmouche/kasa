@@ -1,8 +1,10 @@
+import "../styles/title.css"
+
 
 const Title = ({title}) => {
   return (
     <>
-        <span> {title} </span>
+        <h1 className="ks-title"> {title} </h1>
     </>
   )
 };

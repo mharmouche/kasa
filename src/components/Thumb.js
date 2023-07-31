@@ -7,7 +7,7 @@ import "../styles/thumb.css"
 const Thumb = ({id, title, cover}) => {
   return (
   <>
-    <Link to={'/logement?'+id} className='ks-thumb'>
+    <Link to={'/logement?id='+id} className='ks-thumb'>
       <img className='ks-thumb-cover' src={cover} alt="Chez vous, partout et ailleurs" />
       <span className='ks-thumb-title'> {title}  </span>
     </Link>

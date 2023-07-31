@@ -1,0 +1,10 @@
+.ks-carrousel{
+    position: relative;
+}
+
+.ks-carrousel-img{
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 20px;
+}

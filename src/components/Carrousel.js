@@ -1,9 +1,12 @@
+import '../styles/carrousel.css'
 
 const Carrousel = ({pictures}) => {
     console.log("carroussel " + pictures[0])
     return (
     <>
-        <img src={pictures[0]} alt="" />
+        <div className="ks-carrousel">
+            <img src={pictures[0]} alt="" className="ks-carrousel-img"/>
+        </div>
     </>);
   };
   

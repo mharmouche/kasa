@@ -1,8 +1,9 @@
+import "../styles/location.css"
 
 const Location = ({location}) => {
   return (
     <>
-        <span> {location}  </span>
+        <span className="ks-location"> {location}  </span>
     </>
   )
 };

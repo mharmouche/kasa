@@ -2,7 +2,7 @@
 const Rating = ({rating}) => {
   return (
     <>
-        <span> {rating}  </span>
+        <span> Rating = {rating} /5  </span>
     </>
   )
 };

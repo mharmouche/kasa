@@ -36,7 +36,7 @@ const Logement = () => {
           <Location location={location} />
           <Tags tags={tags}/>
         </div>
-        <div>
+        <div className="ks-logement-subsection12">
           <Host host={host}/>
           <Rating rating ={rating}/>
         </div>

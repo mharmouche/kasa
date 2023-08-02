@@ -1,0 +1,11 @@
+.ks-host{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ks-host img{/*image du host*/
+    max-width: 64px;
+    max-height: 64px;
+    border-radius: 50%;
+}

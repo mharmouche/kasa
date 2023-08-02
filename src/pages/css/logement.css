@@ -5,6 +5,7 @@
     flex-wrap:  wrap;
 
     justify-content:space-between;
+    align-items: center;
     background-color: gainsboro;
     border-radius: 20px;
     color: red;
@@ -19,4 +20,10 @@
     background-color: gainsboro;
     border-radius: 20px;
     color: red;
+}
+
+
+.ks-logement-subsection12{
+    display: flex;
+    flex-direction: column;
 }

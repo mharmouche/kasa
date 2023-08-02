@@ -4,12 +4,12 @@ import Tag from './Tag'
 function TagList(props) {
   const tags = props.tags;
   const listItems = tags.map((tag) =>
-    <li key={tag.toString()}>
+    <div key={tag.toString()}>
       <Tag tagName = {tag} />
-    </li>
+    </div>
   );
   return (
-    <ul>{listItems}</ul>
+    <div>{listItems}</div>
   );
 }
 

@@ -1,9 +1,11 @@
+import Tag from './Tag'
 
-function NumberList(props) {
-  const numbers = props.numbers;
-  const listItems = numbers.map((number) =>
-    <li key={number.toString()}>
-      {number}
+
+function TagList(props) {
+  const tags = props.tags;
+  const listItems = tags.map((tag) =>
+    <li key={tag.toString()}>
+      <Tag tagName = {tag} />
     </li>
   );
   return (
@@ -15,7 +17,8 @@ function NumberList(props) {
 const Tags = ({tags}) => {
   return (
     <>
-        <NumberList numbers={tags} />
+        <TagList tags={tags} />
+        
     </>
   )
 };

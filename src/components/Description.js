@@ -3,7 +3,11 @@ import '../styles/description.css'
 const Description = ({description}) => {
   return (
     <>
-        <span className="ks-logement-description"> {description}  </span>
+      <div className="ks-logement-description">
+        <div> Description </div>
+        <div> <span > {description}  </span> </div>
+      </div>
+      
     </>
   )
 };

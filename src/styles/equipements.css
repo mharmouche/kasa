@@ -1,3 +1,8 @@
-ks-logement-equipement{
+.ks-logement-equipement{
+    display: flex;
+    border-radius: 20px;
+    background-color: #F6F6F6;
+
+
     max-width: 45% ;
 }

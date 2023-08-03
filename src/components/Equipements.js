@@ -15,8 +15,17 @@ function NumberList(props) {
 const Equipements = ({equipements}) => {
   return (
     <>
-        <NumberList numbers={equipements} />
+      <div className='ks-logement-equipement'>
+        <div>
+          <span>Equipements</span>
+        </div>
+        <div>
+            <NumberList numbers={equipements} />
+        </div>
+      </div>
+      
     </>
+    
   )
 };
 

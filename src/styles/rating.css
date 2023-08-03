@@ -1,0 +1,8 @@
+.ks-rating-stars{
+    display: flex;
+}
+
+.ks-rating-star{
+    width: 24.75px;
+    height: 24px;
+}

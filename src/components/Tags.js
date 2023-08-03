@@ -1,3 +1,5 @@
+import '../styles/tags.css'
+
 import Tag from './Tag'
 
 
@@ -9,7 +11,7 @@ function TagList(props) {
     </div>
   );
   return (
-    <div>{listItems}</div>
+    <div className='ks-tags'>{listItems}</div>
   );
 }
 

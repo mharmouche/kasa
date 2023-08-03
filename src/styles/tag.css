@@ -1,6 +1,12 @@
 .ks-tag{
-    color: blue;
-    background-color: beige;
+    background-color: #FF6060;
+    color: white;
+
     border-radius: 10px;
+    height: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
     
 }

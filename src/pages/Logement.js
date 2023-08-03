@@ -31,7 +31,7 @@ const Logement = () => {
     <>
       <Carrousel pictures={pictures}/>
       <div className="ks-logement-section1">
-        <div>
+        <div className="ks-logement-subsection11">
           <Title title={title} />
           <Location location={location} />
           <Tags tags={tags}/>

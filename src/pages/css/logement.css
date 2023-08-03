@@ -18,9 +18,11 @@
     flex-direction: row;
 
     justify-content:space-between;
-    background-color: gainsboro;
+    background-color: #F6F6F6;
+
     border-radius: 20px;
-    color: red;
+    color: #FF6060;
+
 }
 
 

@@ -1,5 +1,6 @@
 .ks-rating-stars{
     display: flex;
+    justify-content: flex-end;
 }
 
 .ks-rating-star{

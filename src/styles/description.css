@@ -1,10 +1,24 @@
 .ks-logement-description{
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
-    background-color: #F6F6F6;
-
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /*background-color: #F6F6F6;*/
 
     width: 45% ;
 
 }
+
+.ks-details{
+    background-color: #F6F6F6;
+    border-radius: 20px;
+
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 20px;
+}
+

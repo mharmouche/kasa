@@ -4,12 +4,10 @@ import Rectangle from './Rectangle'
 function NumberList(props) {
   const numbers = props.numbers;
   const listItems = numbers.map((number) =>
-    <li key={number.toString()}>
-      {number}
-    </li>
+      <>{number}<br></br></>
   );
   return (
-    <ul>{listItems}</ul>
+    <>{listItems}</>
   );
 }
 
@@ -18,7 +16,7 @@ const Equipements = ({equipements}) => {
     <>
       <div className='ks-logement-equipement'>
         <Rectangle text="Equipements"  direction="up"/>
-        <div>
+        <div className='ks-details'>
             <NumberList numbers={equipements} />
         </div>
       </div>

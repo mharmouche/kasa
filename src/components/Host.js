@@ -3,7 +3,7 @@ import "../styles/host.css"
 const Host = ({host}) => {
   return (
     <div className="ks-host">
-        <span> {host.name}  </span>
+        <p>{host.name.replace( " ",  "\n" )}</p> 
         <img src={host.picture} alt=""/>
     </div>
   )

@@ -8,3 +8,19 @@
     object-fit: cover;
     border-radius: 20px;
 }
+
+.ks-arrow-back{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+
+}
+
+.ks-carrousel-forward{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+

@@ -1,4 +1,5 @@
 import '../styles/equipements.css'
+import Rectangle from './Rectangle'
 
 function NumberList(props) {
   const numbers = props.numbers;
@@ -16,14 +17,11 @@ const Equipements = ({equipements}) => {
   return (
     <>
       <div className='ks-logement-equipement'>
-        <div>
-          <span>Equipements</span>
-        </div>
+        <Rectangle text="Equipements"  direction="up"/>
         <div>
             <NumberList numbers={equipements} />
         </div>
       </div>
-      
     </>
     
   )

@@ -1,0 +1,10 @@
+.ks-rectangle{
+    background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,14 +1,14 @@
 import '../styles/description.css'
+import Rectangle from './Rectangle'
 
 const Description = ({description}) => {
   return (
-    <>
+
       <div className="ks-logement-description">
-        <div> Description </div>
-        <div> <span > {description}  </span> </div>
+        <Rectangle text="Description"  direction="dow"/>
+        <div> {description}  </div>
       </div>
-      
-    </>
+
   )
 };
 

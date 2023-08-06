@@ -1,21 +1,24 @@
 import '../styles/navbar.css'
 import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 
 const Navbar = () => {
+    const location = useLocation();
+    const classLink = 'ks-nav-link';
+    const classLinkActive = 'ks-nav-link-active';
+    const classLink1 = location.pathname === '/' ? classLinkActive : classLink;
+    const classLink2 = location.pathname === '/propos/'  ? classLinkActive : classLink;
+    
   return (
     <nav className='ks-nav'>
-        <div className='ks-nav-div'>
-            <p className='ks-nav-p'>
-                <Link  to='/'>Accueil</Link>
-            </p>
+        <div className='ks-nav-div'  >
+                <Link  className={classLink1} to='/'>Accueil</Link>
         </div>
-        <div className='ks-nav-div'>
-            <p className='ks-nav-p'>
-                <Link  to='/propos/'>
+        <div className='ks-nav-div' >
+                <Link className={classLink2}  to='/propos/'>
                     A Propos
                 </Link>
-            </p>
         </div> 
     </nav>
   )

@@ -9,7 +9,7 @@ const Thumb = ({id, title, cover}) => {
   <>
     <Link to={'/logement?id='+id} className='ks-thumb'>
       <img className='ks-thumb-cover' src={cover} alt="Chez vous, partout et ailleurs" />
-      <span className='ks-thumb-title'> {title}  </span>
+      <span className='ks-thumb-title'> {title.replace( " ",  "\n" )}  </span>
     </Link>
   </>);
 };

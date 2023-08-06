@@ -19,6 +19,8 @@
     position: absolute;
     bottom: 8px;
     left: 16px;
+    white-space: pre-wrap;
+
 }
 
 .ks-thumb-cover{

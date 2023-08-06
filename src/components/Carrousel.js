@@ -1,15 +1,23 @@
 import '../styles/carrousel.css'
 import ArrowBack from '../assets/arrow_back_ios-24px 1.png'
 import ArrowForward from '../assets/arrow_forward_ios-24px 1.png'
+import { useState } from "react";
+
+
+var index = 6;
 
 const Carrousel = ({pictures}) => {
-    console.log("carroussel " + pictures[0])
+    console.log("carroussel " + pictures[0]);
+    const l = pictures.length;
+    
+    index = index % l;
     return (
     <>
         <div className="ks-carrousel">
-        <img src={ArrowBack} alt="" className='ks-arrow-back'/>
-        <img src={ArrowForward} alt="" className='ks-carrousel-forward'/>
-        <img src={pictures[0]} alt="" className="ks-carrousel-img"/>
+        <div><img src={ArrowBack} alt="" className='ks-arrow-back' onclick="nextImageMinus()"/></div>
+        <div><img src={ArrowForward} alt="" className='ks-carrousel-forward' onclick="nextImagePlus()"/></div>
+        <img src={pictures[index]} alt="" className="ks-carrousel-img"/>
+        <span className='ks-carrousel-index'> {index + 1} / {l} </span>
         </div>
     </>);
   };

@@ -24,3 +24,18 @@
     transform: translateY(-50%);
 }
 
+.ks-carrousel-index{
+    position: absolute;
+    right: 50%;
+    top: 357.7px;
+    transform: translateX(+50%);
+    height: 32.4px;
+
+    color: #FFFFFF;    ;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+}

@@ -1,7 +1,7 @@
 import '../styles/carrousel.css'
 import ArrowBack from '../assets/arrow_back_ios-24px 1.png'
 import ArrowForward from '../assets/arrow_forward_ios-24px 1.png'
-import { useState } from "react";
+//import { useState } from "react";
 
 
 var index = 6;

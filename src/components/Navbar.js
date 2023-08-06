@@ -7,8 +7,8 @@ const Navbar = () => {
     const location = useLocation();
     const classLink = 'ks-nav-link';
     const classLinkActive = 'ks-nav-link-active';
-    const classLink1 = location.pathname === '/' ? classLinkActive : classLink;
-    const classLink2 = location.pathname === '/propos/'  ? classLinkActive : classLink;
+    const classLink1 = (location.pathname === '/') || (location.pathname === '') ? classLinkActive : classLink;
+    const classLink2 = (location.pathname === '/propos/') || (location.pathname === '/propos')  ? classLinkActive : classLink;
     
   return (
     <nav className='ks-nav'>

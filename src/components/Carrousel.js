@@ -6,16 +6,28 @@ import ArrowForward from '../assets/arrow_forward_ios-24px 1.png'
 
 var index = 6;
 
+
+
 const Carrousel = ({pictures}) => {
-    console.log("carroussel " + pictures[0]);
+    //console.log("carroussel " + pictures[0]);
     const l = pictures.length;
-    
+
+    const nextImageMinus = () => {
+      index = (index - 1 + l )  % l;
+      console.log("click Minus ", index);
+    }
+
+    const nextImagePlus = () => {
+      index = (index + 1 )  % l;
+      console.log("click Plus ", index);
+    }
+
     index = index % l;
     return (
     <>
         <div className="ks-carrousel">
-        <div><img src={ArrowBack} alt="" className='ks-arrow-back' onclick="nextImageMinus()"/></div>
-        <div><img src={ArrowForward} alt="" className='ks-carrousel-forward' onclick="nextImagePlus()"/></div>
+        <div ><img src={ArrowBack} alt="" className='ks-arrow-back' onClick={nextImageMinus}/></div>
+        <div ><img src={ArrowForward} alt="" className='ks-carrousel-forward' onClick={nextImagePlus}/></div>
         <img src={pictures[index]} alt="" className="ks-carrousel-img"/>
         <span className='ks-carrousel-index'> {index + 1} / {l} </span>
         </div>
@@ -23,3 +35,4 @@ const Carrousel = ({pictures}) => {
   };
   
   export default Carrousel;
+

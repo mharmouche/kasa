@@ -16,3 +16,11 @@
     font-size: 1.4rem;
     text-decoration: underline solid; 
 }
+
+@media screen and (max-width: 800px){
+    .ks-nav-link , .ks-nav-link-active{
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+    }
+}

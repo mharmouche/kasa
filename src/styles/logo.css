@@ -4,4 +4,12 @@
     padding-top: 10px;
 }
 
+@media screen and (max-width: 800px){
+    .ks-logo{
+        width: 145px;
+        height: 47px;
+
+    }
+}
+
 

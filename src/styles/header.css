@@ -4,3 +4,9 @@
     align-items: center;
     padding-bottom: 20px;
 }
+
+@media screen and (max-width: 800px){
+    .ks-header{
+        padding-bottom: 10px;
+    }
+}

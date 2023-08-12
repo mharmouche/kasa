@@ -39,3 +39,18 @@
     letter-spacing: 0em;
     text-align: center;
 }
+
+
+
+
+@media screen and (max-width: 800px){
+    .ks-carrousel-img{
+        height: 255px;
+    } 
+    
+    .ks-arrow-back, .ks-carrousel-forward{
+        width: 24px;
+        height: 24px;
+
+    }
+}

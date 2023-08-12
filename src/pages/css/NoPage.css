@@ -4,8 +4,16 @@
     align-items: center;
     color: #FF6060;
 }
+.ks-nopage img{
+    padding-top: 100px;
 
-.ks-nopage a{
+}
+.ks-nopage-lien{
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.ks-nopage div a{
     color: #FF6060;
     font-size: 18px;
     line-height: 26px;
@@ -31,7 +39,11 @@
         font-weight: 500;
         line-height: 20px;
     }
-    
+
+    .ks-nopage-lien{
+        padding-top: 100px;
+        padding-bottom: 150px;
+    }   
 
 
 

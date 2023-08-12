@@ -3,7 +3,7 @@ import '../styles/copyright.css'
 const Copyright = () => {
   return (
     <>
-        <span className='ks-copyright'> © 2020 Kasa. All rights reserved </span>
+        <div className='ks-copyright'><span> © 2020 Kasa. All rights reserved </span></div>
     </>
   )
 };

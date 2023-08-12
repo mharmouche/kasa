@@ -20,3 +20,15 @@
     text-align: left;
 
 }
+
+@media screen and (max-width: 800px){
+    .ks-rectangle{
+        font-size: 13px;
+        line-height: 19px; 
+        height: 29.9px;
+    }
+
+    .ks-rectangle img{
+        width: 18.42px;
+    }
+}

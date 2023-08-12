@@ -1,6 +1,8 @@
 .ks-dropdown-details{
     background-color: #F6F6F6;
     border-radius: 20px;
+    color: #FF6060;
+    ;
 
     font-family: Montserrat;
     font-size: 24px;
@@ -12,4 +14,13 @@
 }
 .ks-dropdown-box{
     padding-bottom: 25px;
+}
+
+
+@media screen and (max-width: 800px){
+    .ks-dropdown-details{
+        font-size: 12px;
+        line-height: 17px;
+    }
+
 }

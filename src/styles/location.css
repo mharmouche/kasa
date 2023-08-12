@@ -7,3 +7,11 @@
     text-align: left;
     
 }
+
+
+@media screen and (max-width: 800px){
+    .ks-location{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

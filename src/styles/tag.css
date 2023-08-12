@@ -11,3 +11,12 @@
     margin-right: 10px;
     
 }
+
+@media screen and (max-width: 800px){
+    .ks-tag{
+        height: 18px;
+
+        font-size: 10px;
+        line-height: 14px;
+    }
+}

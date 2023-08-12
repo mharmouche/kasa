@@ -6,3 +6,12 @@
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
+
+@media screen and (max-width: 800px){
+    .ks-propos{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+}

@@ -6,3 +6,11 @@
     letter-spacing: 0em;
     text-align: left;
 }
+
+
+@media screen and (max-width: 800px){
+    .ks-title{
+        font-size: 18px;
+        line-height: 26px;
+    }
+}

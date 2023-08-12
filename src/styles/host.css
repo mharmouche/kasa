@@ -11,3 +11,18 @@
     max-height: 64px;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 800px){
+    .ks-host img{/*image du host*/
+        max-width: 32px;
+        max-height: 32px;
+    }
+    .ks-host p{
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: right;
+
+    }
+}

@@ -19,7 +19,7 @@ const Banner = () => {
     return (
       <div className='ks-banner'>
           <img className='ks-banner-img' src={photo1} alt="Chez vous, partout et ailleurs" />
-          <span className='ks-banner-txt'> Chez vous, partout et ailleurs  </span>
+          <span className='ks-banner-txt'> Chez vous,<br/> partout et ailleurs  </span>
       </div>
     )
   }

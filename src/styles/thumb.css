@@ -29,3 +29,12 @@
     object-fit: cover;
     border-radius: 20px;
 }
+
+
+@media screen and (max-width: 800px){
+    .ks-thumb {
+        width: 100%;
+        margin: 0px;
+        margin-top: 10px;
+    }
+}

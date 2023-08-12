@@ -27,6 +27,9 @@
 
 }
 
+.ks-banner-txt br{
+    display: none;
+}
 
 @media screen and (max-width: 800px){
     .ks-banner-txt{
@@ -37,6 +40,9 @@
         letter-spacing: 0em;
         text-align: left;
 
+    }
+    .ks-banner-txt br{
+        display: block;
     }
 
     .ks-banner-img{

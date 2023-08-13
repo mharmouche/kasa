@@ -13,10 +13,17 @@ import Equipements from "../components/Equipements";
 
 const Logement = () => {
   const queryParameters = new URLSearchParams(window.location.search)
+  if (queryParameters.get("id") === null){
+    console.log('id non défini');
+    window.location.replace('./NoPage');
+  }
   const id = queryParameters.get("id").toString()
+  console.log('id = ' + id);
   const dataLogement = datas.filter(data => data.id === id);
-  //console.log(datas)
-  //console.log(dataLogement[0])
+  if (dataLogement.length === 0){
+    console.log('id non trouvé');
+    window.location.replace('./NoPage');
+  }  
   const title = dataLogement[0].title
   //const cover = dataLogement[0].cover
   const pictures = dataLogement[0].pictures

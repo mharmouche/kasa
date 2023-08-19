@@ -6,7 +6,7 @@ import './css/propos.css'
 
 const Propos = () => {
 
-  const Dropdowns = Datas.map((Data) => <Dropdown title = {Data.title} text={Data.txt} />);
+  const Dropdowns = Datas.map((Data) => <Dropdown title = {Data.title} key = {Data.title} text={Data.txt} />);
   return (
     <>
       <div className='ks-propos'>

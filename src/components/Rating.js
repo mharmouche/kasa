@@ -18,9 +18,9 @@ const Rating = ({rating}) => {
   return (
     <div className='ks-rating-stars' >
         {
-          stars.map((name) => {
+          stars.map((name, index) => {
             return (
-              <img src={name} alt='' className='ks-rating-star'/>
+              <img key={"star " + index} src={name} alt='' className='ks-rating-star'/>
             )
           })
         }

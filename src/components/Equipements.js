@@ -5,8 +5,8 @@ import { useState } from "react";
 
 function NumberList(props) {
   const numbers = props.numbers;
-  const listItems = numbers.map((number) =>
-      <>{number}<br></br></>
+  const listItems = numbers.map((number, index) =>
+      <span key={"equipement " + index}>{number}<br></br></span>
   );
   return (
     <>{listItems}</>

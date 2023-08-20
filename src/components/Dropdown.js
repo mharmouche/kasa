@@ -12,8 +12,8 @@ const Dropdown = ({title, text}) => {
     }
     return (
     <>
-        <div className='ks-dropdown-box' onClick={toggleDirection} >
-            <Rectangle text = {title}  direction={direction} />
+        <div className='ks-dropdown-box'  >
+            <div onClick={toggleDirection} ><Rectangle text = {title}  direction={direction}/></div>
             {direction === 'up' ? <div className='ks-dropdown-details'>{text}</div> : null}
         </div>
         

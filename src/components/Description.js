@@ -12,8 +12,8 @@ const Description = ({description}) => {
   //const direction = "up"
   return (
 
-      <div className="ks-logement-description" onClick={toggleDirection}>
-        <Rectangle text="Description"  direction={direction}/>
+      <div className="ks-logement-description">
+        <div onClick={toggleDirection}><Rectangle text="Description"  direction={direction}/></div>
         {direction === 'up' ? <div className='ks-details'>{description}</div> : null}
       </div>
 

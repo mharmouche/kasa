@@ -21,8 +21,8 @@ const Equipements = ({equipements}) => {
     }
   return (
     <>
-      <div className='ks-logement-equipement'  onClick={toggleDirection}>
-        <Rectangle text="Equipements"  direction={direction}/>
+      <div className='ks-logement-equipement' >
+        <div onClick={toggleDirection}><Rectangle text="Equipements"  direction={direction}/></div>
         {
           direction === 'up' ? <div className='ks-details'> <NumberList numbers={equipements} /> </div> : null
         }
